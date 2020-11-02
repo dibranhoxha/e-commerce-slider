@@ -1,4 +1,5 @@
+import products from './productsData/products.js'
+import data from './productsData/products.js';
 
-fetch('./productsData/products.json')
-    .then(results => results.json())
-    .then(console.log)
+console.log(data);
+

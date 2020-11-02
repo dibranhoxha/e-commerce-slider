@@ -1,4 +1,4 @@
-[
+const data = [
 	{
 		"id": 1,
 		"name": "Durable Silk Pants",
@@ -524,3 +524,4 @@
 		]
 	}
 ]
+export default data;
