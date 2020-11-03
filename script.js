@@ -1,29 +1,28 @@
 
-import data from './productsData/products.js';
+import iPhoneData from './productsData/products.js';
 
-console.log(data);
+console.log(iPhoneData);
 displayCards();
 
 function displayCards() {
 
     var cardsHtml = ""
-    data.forEach(() => {
+    iPhoneData.map(product => {
         cardsHtml += `
         <div class="slider-box">
             <div class="slider-img">
-                <img src="https://static.toiimg.com/photo/71452088/Apple-iPhone-12-Pro.jpg" alt="">
+                <img src="${product.photoUrl}" alt="">
             </div>
             <div class="slider-details">
                 <div class="type">
-                    <a href="#">Apple iPhone 12 Pro</a>
+                    <a href="#">${product.name}</a>
                 </div>
                 <div class="price-container">
-                    <a href="#"><span class="price">1100 &euro;</span></a>
+                    <a href="#"><span class="price">${product.price} &euro;</span></a>
                 </div>
             </div>
         </div>
         `
-    });
-
+    })
     document.querySelector('div.slider-container').innerHTML = cardsHtml;
 }
