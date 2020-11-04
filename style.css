@@ -13,18 +13,22 @@ a > span {
 	font-weight: 700;
 }
 
-.cards-container {
+.slider-container {
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 100%;
+	height: 80%;
 	padding-top: 10px;
 	display: flex;
 	flex-direction: row;
 	/* overflow-x: hidden !important; */
-	overflow-y: auto;
+	overflow-y: scroll;
 	background-color: rgb(33, 121, 197);
+}
+
+.slider-container::-webkit-scrollbar {
+	display: none;
 }
 
 .slider-box {
