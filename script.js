@@ -1,4 +1,4 @@
-import iPhoneData from './productsData/products.js';
+import iPhoneData from './products-data/products.js';
 
 let sliderContainer = document.querySelector('div.slider-container');
 let leftArrow = document.querySelector('div.navigation-left');
@@ -27,6 +27,9 @@ function displayCards() {
                 <div class="price-container">
                     <a href="#"><span class="price">${product.price} &euro;</span></a>
                 </div>
+                <div class="feedback">
+                    <span class="feedback-stars">${product.feedback}</span>
+                </div>
             </div>
         </div>
         `
@@ -35,6 +38,6 @@ function displayCards() {
 }
 
 function scroll(scrollSide) {
-    (scrollSide == 'navigation navigation-left') ? sliderContainer.scrollLeft += 100 : sliderContainer.scrollLeft -= 100;
+    (scrollSide == 'navigation navigation-left') ? sliderContainer.scrollLeft -= 100 : sliderContainer.scrollLeft += 100;
 }
 
