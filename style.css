@@ -16,7 +16,7 @@ a > span {
 
 .slider-container {
 	margin: 0 auto;
-	width: 90%;
+	width: 90vw;
 	height: 80%;
 	padding-top: 10px;
 	display: flex;
@@ -78,16 +78,15 @@ a > span {
 	width: 70px;
 	height: 70px;
 	background-color: #fff;
-	box-shadow: 2px 2px 2px #ececec;
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
 	border-radius: 50%;
 	z-index: 999;
 	top: 200px;
-	outline: #fff;
 }
 
 .navigation-left {
 	position: fixed;
-	left: 30px;
+	left: 40px;
 }
 
 .navigation-left img {
@@ -96,7 +95,7 @@ a > span {
 
 .navigation-right {
 	position: fixed;
-	right: 30px;
+	right: 40px;
 }
 
 .navigation-right img {

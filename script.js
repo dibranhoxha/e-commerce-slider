@@ -4,7 +4,7 @@ let sliderContainer = document.querySelector('div.slider-container');
 let leftArrow = document.querySelector('div.navigation-left');
 let rightArrow = document.querySelector('div.navigation-right');
 
-
+checkScroll();
 displayCards();
 leftArrow.addEventListener('click', () => scroll(leftArrow.className));
 rightArrow.addEventListener('click', () => scroll(rightArrow.className));
@@ -37,7 +37,19 @@ function displayCards() {
     sliderContainer.innerHTML += cardsHtml;
 }
 
+function checkScroll() {
+    if (sliderContainer.scrollLeft == 3228) {
+        rightArrow.style.display = "none";
+    } else if (sliderContainer.scrollLeft > 0) {
+        leftArrow.style.display = "flex";
+        rightArrow.style.display = "flex"
+    } else {
+        leftArrow.style.display = "none";
+    }
+}
+
 function scroll(scrollSide) {
-    (scrollSide == 'navigation navigation-left') ? sliderContainer.scrollLeft -= 100 : sliderContainer.scrollLeft += 100;
+    scrollSide == 'navigation navigation-left' ? sliderContainer.scrollLeft -= 1200 : sliderContainer.scrollLeft += 1200;
+    checkScroll();
 }
 
