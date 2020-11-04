@@ -13,17 +13,18 @@ a > span {
 	font-weight: 700;
 }
 
-.slider-container {
+.cards-container {
 	position: absolute;
 	left: 0;
 	top: 0;
+	width: 100%;
+	height: 100%;
 	padding-top: 10px;
 	display: flex;
 	flex-direction: row;
-	width: 100%;
-	height: 80%;
 	/* overflow-x: hidden !important; */
 	overflow-y: auto;
+	background-color: rgb(33, 121, 197);
 }
 
 .slider-box {
@@ -62,4 +63,33 @@ a > span {
 	font-size: 1.2em;
 	padding-left: 10px;
 	text-align: left;
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 70px;
+	height: 70px;
+	background-color: gainsboro;
+	border-radius: 50%;
+	z-index: 999;
+	top: 200px;
+}
+
+.navigation-left {
+	left: 20px;
+}
+
+.navigation-left img {
+	height: 50%;
+}
+
+.navigation-right {
+	right: 20px;
+}
+
+.navigation-right img {
+	height: 50%;
 }

@@ -1,7 +1,7 @@
-
 import iPhoneData from './productsData/products.js';
 
-console.log(iPhoneData);
+let cardsContainer = document.querySelector('div.cards-container')
+
 displayCards();
 
 function displayCards() {
@@ -24,5 +24,6 @@ function displayCards() {
         </div>
         `
     })
-    document.querySelector('div.slider-container').innerHTML = cardsHtml;
+    cardsContainer.innerHTML += cardsHtml;
 }
+
