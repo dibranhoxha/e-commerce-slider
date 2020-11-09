@@ -1,6 +1,7 @@
 let sliderContainer = document.querySelector('div.slider-container');
 let leftArrow = document.querySelector('div.navigation-left');
 let rightArrow = document.querySelector('div.navigation-right');
+let card = document.querySelector("div.slider-box")
 
 const iphoneData = [
     {
@@ -186,30 +187,45 @@ displayCards(iphoneData);
 leftArrow.addEventListener('click', () => scroll(leftArrow.className));
 rightArrow.addEventListener('click', () => scroll(rightArrow.className));
 
-function displayCards(iPhoneData) {
 
-    var cardsHtml = ""
+
+
+function displayCards(iPhoneData) {
+    let template = document.querySelector("template");
     iPhoneData.map(product => {
-        cardsHtml += `
-        <div class="slider-box">
-            <div class="slider-img">
-                <img src="${product.photoUrl}" alt="">
-            </div>
-            <div class="slider-details">
-                <div class="type">
-                    <a href="#">${product.name}</a>
-                </div>
-                <div class="price-container">
-                    <a href="#"><span class="price">${product.price} &euro;</span></a>
-                </div>
-                <div class="feedback">
-                    <span class="feedback-stars">${product.feedback}</span>
-                </div>
-            </div>
-        </div>
-        `
+        let clone = template.content.cloneNode(true);
+        let img = clone.querySelector(".slider-img img");
+        img.setAttribute("src", product.photoUrl);
+        let model = clone.querySelector(".type a");
+        model.innerText = product.name;
+        let price = clone.querySelector(".price-container .price");
+        price.innerText = product.price;
+        sliderContainer.appendChild(clone);
     })
-    sliderContainer.innerHTML += cardsHtml;
+
+
+    // var cardsHtml = ""
+    // iPhoneData.map(product => {
+    //     cardsHtml += `
+    //     <div class="slider-box">
+    //         <div class="slider-img">
+    //             <img src="${product.photoUrl}" alt="">
+    //         </div>
+    //         <div class="slider-details">
+    //             <div class="type">
+    //                 <a href="#">${product.name}</a>
+    //             </div>
+    //             <div class="price-container">
+    //                 <a href="#"><span class="price">${product.price} &euro;</span></a>
+    //             </div>
+    //             <div class="feedback">
+    //                 <span class="feedback-stars">${product.feedback}</span>
+    //             </div>
+    //         </div>
+    //     </div>
+    //     `
+    // })
+    // sliderContainer.innerHTML += cardsHtml;
 }
 
 function checkScroll() {
