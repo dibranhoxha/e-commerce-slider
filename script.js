@@ -248,8 +248,7 @@ function displayCards(iPhoneData) {
 
 function checkScroll() {
     let difference = sliderContainer.scrollWidth - sliderContainer.offsetWidth;
-    console.log(Math.ceil(sliderContainer.scrollLeft), difference);
-    if (Math.ceil(sliderContainer.scrollLeft) == width) {
+    if (Math.ceil(sliderContainer.scrollLeft) == difference) {
         rightArrow.style.display = "none";
     } else if (sliderContainer.scrollLeft > 0) {
         leftArrow.style.display = "flex";
@@ -260,7 +259,6 @@ function checkScroll() {
 }
 
 function scroll(scrollSide) {
-
     scrollSide == 'navigation navigation-left' ? sliderContainer.scrollLeft -= (sliderContainer.offsetWidth - sliderContainer.offsetLeft / 2) : sliderContainer.scrollLeft += (sliderContainer.offsetWidth - sliderContainer.offsetLeft / 2);
     checkScroll();
 }
