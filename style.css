@@ -71,17 +71,37 @@ a > span {
 	text-align: left;
 }
 
+.feedback {
+	padding-left: 5px;
+}
+
+.feedback-stars {
+	color: rgb(255, 238, 0);
+	font-size: 0.95em;
+}
+
+.feedback-amount {
+	font-size: 1em;
+	font-weight: bold;
+	color: #949fa5;
+}
+
 .navigation {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 65px;
-	height: 65px;
+	width: 60px;
+	height: 60px;
 	background-color: #fff;
 	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
 	border-radius: 50%;
 	z-index: 999;
 	top: 180px;
+}
+
+.navigation img {
+	width: 40%;
+	height: 40%;
 }
 
 .navigation-left {
@@ -90,15 +110,7 @@ a > span {
 	left: 10.2vw;
 }
 
-.navigation-left img {
-	height: 50%;
-}
-
 .navigation-right {
 	position: fixed;
 	right: 10.2vw;
-}
-
-.navigation-right img {
-	height: 50%;
 }

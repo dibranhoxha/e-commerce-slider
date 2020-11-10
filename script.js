@@ -10,7 +10,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro_Max-retina.png',
         price: 1500,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(16.209)"
     },
     {
         id: 2,
@@ -18,7 +19,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro-retina.png',
         price: 1300,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(7.534)"
     },
     {
         id: 3,
@@ -26,7 +28,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12-retina.png',
         price: 1100,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(8.689)"
     },
     {
         id: 4,
@@ -34,7 +37,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11ProMax.png',
         price: 999,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(25.176)"
     },
     {
         id: 5,
@@ -42,7 +46,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11PRO.png',
         price: 900,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(8.689)"
     },
     {
         id: 6,
@@ -50,7 +55,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11.png',
         price: 799,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(12.304)"
     },
     {
         id: 7,
@@ -58,7 +64,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXsMax.png',
         price: 650,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(15.126)"
     },
     {
         id: 8,
@@ -66,7 +73,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXs.png',
         price: 599,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(5.346)"
     },
     {
         id: 9,
@@ -74,7 +82,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXR.png',
         price: 550,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(5.076)"
     },
     {
         id: 10,
@@ -82,7 +91,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXs.png',
         price: 480,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(15.146)"
     },
     {
         id: 11,
@@ -90,7 +100,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone8Plus.png',
         price: 330,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(2.223)"
     },
     {
         id: 12,
@@ -98,7 +109,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro_Max-retina.png',
         price: 1500,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(25.176)"
     },
     {
         id: 13,
@@ -106,7 +118,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro-retina.png',
         price: 1300,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(4.564)"
     },
     {
         id: 14,
@@ -114,7 +127,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12-retina.png',
         price: 1100,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(6.143)"
     },
     {
         id: 15,
@@ -122,7 +136,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11ProMax.png',
         price: 999,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(8.156)"
     },
     {
         id: 16,
@@ -130,7 +145,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11PRO.png',
         price: 900,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(3.176)"
     },
     {
         id: 17,
@@ -138,7 +154,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11.png',
         price: 799,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(15.176)"
     },
     {
         id: 18,
@@ -146,7 +163,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXsMax.png',
         price: 650,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(12.136)"
     },
     {
         id: 19,
@@ -154,7 +172,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXs.png',
         price: 599,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(7.689)"
     },
     {
         id: 20,
@@ -162,7 +181,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXR.png',
         price: 550,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(9.876)"
     },
     {
         id: 21,
@@ -170,7 +190,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXs.png',
         price: 480,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(5.432)"
     },
     {
         id: 22,
@@ -178,7 +199,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone8Plus.png',
         price: 330,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(7.176)"
     },
     {
         id: 23,
@@ -186,7 +208,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro_Max-retina.png',
         price: 1500,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(25.176)"
     },
     {
         id: 24,
@@ -194,7 +217,8 @@ const iphoneData = [
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro-retina.png',
         price: 1300,
-        feedback: '&starf;'
+        feedback: '&starf;&starf;&starf;&starf;&starf;',
+        feedbackAmount: "(5.112)"
     },
 ];
 
@@ -215,6 +239,10 @@ function displayCards(iPhoneData) {
         model.innerText = product.name;
         let price = clone.querySelector(".price-container .price");
         price.innerText = product.price;
+        let feedback = clone.querySelector(".feedback-stars");
+        feedback.innerHTML = product.feedback;
+        let feedbackAmount = clone.querySelector(".feedback-amount");
+        feedbackAmount.innerHTML = product.feedbackAmount;
         sliderContainer.appendChild(clone);
     })
 
@@ -246,7 +274,7 @@ function displayCards(iPhoneData) {
 
 function checkScroll() {
     let difference = sliderContainer.scrollWidth - sliderContainer.offsetWidth;
-    console.log(sliderContainer.scrollLeft, difference)
+    // console.log(sliderContainer.scrollLeft, difference)
     if (sliderContainer.scrollLeft >= difference) {
         rightArrow.style.display = "none";
     } else if (sliderContainer.scrollLeft > 0) {
