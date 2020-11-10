@@ -93,7 +93,7 @@ const iphoneData = [
         feedback: '&starf;'
     },
     {
-        id: 1,
+        id: 12,
         name: 'Apple iphone 12 Pro max',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro_Max-retina.png',
@@ -101,7 +101,7 @@ const iphoneData = [
         feedback: '&starf;'
     },
     {
-        id: 2,
+        id: 13,
         name: 'Apple iphone 12 Pro',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro-retina.png',
@@ -109,7 +109,7 @@ const iphoneData = [
         feedback: '&starf;'
     },
     {
-        id: 3,
+        id: 14,
         name: 'Apple iPhone 12',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12-retina.png',
@@ -117,7 +117,7 @@ const iphoneData = [
         feedback: '&starf;'
     },
     {
-        id: 4,
+        id: 15,
         name: 'Apple iPhone 11 Pro max',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11ProMax.png',
@@ -125,7 +125,7 @@ const iphoneData = [
         feedback: '&starf;'
     },
     {
-        id: 5,
+        id: 16,
         name: 'Apple iPhone 11 Pro',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11PRO.png',
@@ -133,7 +133,7 @@ const iphoneData = [
         feedback: '&starf;'
     },
     {
-        id: 6,
+        id: 17,
         name: 'Apple iPhone 11',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11.png',
@@ -141,7 +141,7 @@ const iphoneData = [
         feedback: '&starf;'
     },
     {
-        id: 7,
+        id: 18,
         name: 'Apple iPhone XS max',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXsMax.png',
@@ -149,7 +149,7 @@ const iphoneData = [
         feedback: '&starf;'
     },
     {
-        id: 8,
+        id: 19,
         name: 'Apple iPhone XS',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXs.png',
@@ -157,7 +157,7 @@ const iphoneData = [
         feedback: '&starf;'
     },
     {
-        id: 9,
+        id: 20,
         name: 'Apple iPhone XR',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXR.png',
@@ -165,7 +165,7 @@ const iphoneData = [
         feedback: '&starf;'
     },
     {
-        id: 10,
+        id: 21,
         name: 'Apple iPhone X',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXs.png',
@@ -173,16 +173,33 @@ const iphoneData = [
         feedback: '&starf;'
     },
     {
-        id: 11,
+        id: 22,
         name: 'Apple iPhone 8 Plus',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone8Plus.png',
         price: 330,
         feedback: '&starf;'
     },
+    {
+        id: 23,
+        name: 'Apple iphone 12 Pro max',
+        description: 'asdfasdfasdf',
+        photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro_Max-retina.png',
+        price: 1500,
+        feedback: '&starf;'
+    },
+    {
+        id: 24,
+        name: 'Apple iphone 12 Pro',
+        description: 'asdfasdfasdf',
+        photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro-retina.png',
+        price: 1300,
+        feedback: '&starf;'
+    },
+
+
 ];
 
-checkScroll();
 displayCards(iphoneData);
 leftArrow.addEventListener('click', () => scroll(leftArrow.className));
 rightArrow.addEventListener('click', () => scroll(rightArrow.className));
@@ -228,8 +245,11 @@ function displayCards(iPhoneData) {
     // sliderContainer.innerHTML += cardsHtml;
 }
 
+
 function checkScroll() {
-    if (sliderContainer.scrollLeft == 3228) {
+    let difference = sliderContainer.scrollWidth - sliderContainer.offsetWidth;
+    console.log(Math.ceil(sliderContainer.scrollLeft), difference);
+    if (Math.ceil(sliderContainer.scrollLeft) == width) {
         rightArrow.style.display = "none";
     } else if (sliderContainer.scrollLeft > 0) {
         leftArrow.style.display = "flex";
@@ -240,7 +260,8 @@ function checkScroll() {
 }
 
 function scroll(scrollSide) {
-    scrollSide == 'navigation navigation-left' ? sliderContainer.scrollLeft -= 1200 : sliderContainer.scrollLeft += 1200;
+
+    scrollSide == 'navigation navigation-left' ? sliderContainer.scrollLeft -= (sliderContainer.offsetWidth - sliderContainer.offsetLeft / 2) : sliderContainer.scrollLeft += (sliderContainer.offsetWidth - sliderContainer.offsetLeft / 2);
     checkScroll();
 }
 
