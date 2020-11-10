@@ -248,7 +248,7 @@ function displayCards(iPhoneData) {
 
 function checkScroll() {
     let difference = sliderContainer.scrollWidth - sliderContainer.offsetWidth;
-    if (Math.ceil(sliderContainer.scrollLeft) == difference) {
+    if (Math.ceil(sliderContainer.scrollLeft) >= difference) {
         rightArrow.style.display = "none";
     } else if (sliderContainer.scrollLeft > 0) {
         leftArrow.style.display = "flex";
