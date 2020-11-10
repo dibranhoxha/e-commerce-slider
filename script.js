@@ -196,8 +196,6 @@ const iphoneData = [
         price: 1300,
         feedback: '&starf;'
     },
-
-
 ];
 
 displayCards(iphoneData);
@@ -248,7 +246,8 @@ function displayCards(iPhoneData) {
 
 function checkScroll() {
     let difference = sliderContainer.scrollWidth - sliderContainer.offsetWidth;
-    if (Math.ceil(sliderContainer.scrollLeft) >= difference) {
+    console.log(sliderContainer.scrollLeft, difference)
+    if (sliderContainer.scrollLeft >= difference) {
         rightArrow.style.display = "none";
     } else if (sliderContainer.scrollLeft > 0) {
         leftArrow.style.display = "flex";
