@@ -6,219 +6,267 @@ let card = document.querySelector("div.slider-box")
 const iphoneData = [
     {
         id: 1,
-        name: 'Apple iphone 12 Pro max',
+        name: 'Apple iphone 12 Pro max - Space Grey',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro_Max-retina.png',
-        price: 1500,
+        price: "1500 &euro;",
+        market: 'Back Market',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(16.209)"
+        feedbackAmount: "(16.209)",
+        shipping: 'Free shipping'
     },
     {
         id: 2,
         name: 'Apple iphone 12 Pro',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro-retina.png',
-        price: 1300,
+        price: "1300 &euro;",
+        market: 'Cyber Port',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(7.534)"
+        feedbackAmount: "(7.534)",
+        shipping: '+ 5.84 &euro; shipping...'
     },
     {
         id: 3,
         name: 'Apple iPhone 12',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12-retina.png',
-        price: 1100,
+        price: "1100 &euro;",
+        market: 'Telekom',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(8.689)"
+        feedbackAmount: "(8.689)",
+        shipping: 'Free shipping'
     },
     {
         id: 4,
         name: 'Apple iPhone 11 Pro max',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11ProMax.png',
-        price: 999,
+        price: "999 &euro;",
+        market: 'Cleverbuy',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(25.176)"
+        feedbackAmount: "(25.176)",
+        shipping: 'Free shipping'
     },
     {
         id: 5,
         name: 'Apple iPhone 11 Pro',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11PRO.png',
-        price: 900,
+        price: "900 &euro;",
+        market: 'Back Market',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(8.689)"
+        feedbackAmount: "(8.689)",
+        shipping: 'Free shipping'
     },
     {
         id: 6,
         name: 'Apple iPhone 11',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11.png',
-        price: 799,
+        price: "799 &euro;",
+        market: 'Cyber Port',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(12.304)"
+        feedbackAmount: "(12.304)",
+        shipping: '+ 6.64 &euro; shipping...'
     },
     {
         id: 7,
         name: 'Apple iPhone XS max',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXsMax.png',
-        price: 650,
+        price: "650 &euro;",
+        market: 'Telekom',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(15.126)"
+        feedbackAmount: "(15.126)",
+        shipping: '+ 3.84 &euro; shipping...'
     },
     {
         id: 8,
         name: 'Apple iPhone XS',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXs.png',
-        price: 599,
+        price: "599 &euro;",
+        market: 'Cleverbuy',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(5.346)"
+        feedbackAmount: "(5.346)",
+        shipping: 'Free shipping'
     },
     {
         id: 9,
         name: 'Apple iPhone XR',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXR.png',
-        price: 550,
+        price: "550 &euro;",
+        market: 'Cyberport',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(5.076)"
+        feedbackAmount: "(5.076)",
+        shipping: 'Free shipping'
     },
     {
         id: 10,
         name: 'Apple iPhone X',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXs.png',
-        price: 480,
+        price: "480 &euro;",
+        market: 'Cyberport',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(15.146)"
+        feedbackAmount: "(15.146)",
+        shipping: 'Free shipping'
     },
     {
         id: 11,
         name: 'Apple iPhone 8 Plus',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone8Plus.png',
-        price: 330,
+        price: "330 &euro;",
+        market: 'Telekom',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(2.223)"
+        feedbackAmount: "(2.223)",
+        shipping: '+ 5.84 &euro; shipping...'
     },
     {
         id: 12,
         name: 'Apple iphone 12 Pro max',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro_Max-retina.png',
-        price: 1500,
+        price: "1500 &euro;",
+        market: 'Cleverbuy',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(25.176)"
+        feedbackAmount: "(25.176)",
+        shipping: 'Free shipping'
     },
     {
         id: 13,
         name: 'Apple iphone 12 Pro',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro-retina.png',
-        price: 1300,
+        price: "1300 &euro;",
+        market: 'Cleverbuy',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(4.564)"
+        feedbackAmount: "(4.564)",
+        shipping: 'Free shipping'
     },
     {
         id: 14,
         name: 'Apple iPhone 12',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12-retina.png',
-        price: 1100,
+        price: "1100 &euro;",
+        market: 'Back Market',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(6.143)"
+        feedbackAmount: "(6.143)",
+        shipping: '+ 5.84 &euro; shipping...'
     },
     {
         id: 15,
         name: 'Apple iPhone 11 Pro max',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11ProMax.png',
-        price: 999,
+        price: "999 &euro;",
+        market: 'Back Market',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(8.156)"
+        feedbackAmount: "(8.156)",
+        shipping: 'Free shipping'
     },
     {
         id: 16,
         name: 'Apple iPhone 11 Pro',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11PRO.png',
-        price: 900,
+        price: "900 &euro;",
+        market: 'Back Market',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(3.176)"
+        feedbackAmount: "(3.176)",
+        shipping: 'Free shipping'
     },
     {
         id: 17,
         name: 'Apple iPhone 11',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone11.png',
-        price: 799,
+        price: "799 &euro;",
+        market: 'Telekom',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(15.176)"
+        feedbackAmount: "(15.176)",
+        shipping: '+ 5.84 &euro; shipping...'
     },
     {
         id: 18,
         name: 'Apple iPhone XS max',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXsMax.png',
-        price: 650,
+        price: "650 &euro;",
+        market: 'Cyberport',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(12.136)"
+        feedbackAmount: "(12.136)",
+        shipping: '+ 5.84 &euro; shipping...'
     },
     {
         id: 19,
         name: 'Apple iPhone XS',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXs.png',
-        price: 599,
+        price: "599 &euro;",
+        market: 'Back Market',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(7.689)"
+        feedbackAmount: "(7.689)",
+        shipping: 'Free shipping'
     },
     {
         id: 20,
         name: 'Apple iPhone XR',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXR.png',
-        price: 550,
+        price: "550 &euro;",
+        market: 'Cleverbuy',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(9.876)"
+        feedbackAmount: "(9.876)",
+        shipping: 'Free shipping'
     },
     {
         id: 21,
         name: 'Apple iPhone X',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphoneXs.png',
-        price: 480,
+        price: "480 &euro;",
+        market: 'Cleverbuy',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(5.432)"
+        feedbackAmount: "(5.432)",
+        shipping: 'Free shipping'
     },
     {
         id: 22,
         name: 'Apple iPhone 8 Plus',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/149432-compare-page-iphone8Plus.png',
-        price: 330,
+        price: "330 &euro;",
+        market: 'Telekom',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(7.176)"
+        feedbackAmount: "(7.176)",
+        shipping: '+ 5.84 &euro; shipping...'
     },
     {
         id: 23,
         name: 'Apple iphone 12 Pro max',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro_Max-retina.png',
-        price: 1500,
+        price: "1500 &euro;",
+        market: 'Cyberport',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(25.176)"
+        feedbackAmount: "(25.176)",
+        shipping: 'Free shipping'
     },
     {
         id: 24,
         name: 'Apple iphone 12 Pro',
         description: 'asdfasdfasdf',
         photoUrl: 'https://www.att.com/idpassets/sales/uf/compare/iphone-compare-page/150304-migration-iPhone12Pro-retina.png',
-        price: 1300,
+        price: "1300 &euro;",
+        market: 'Cleverbuy',
         feedback: '&starf;&starf;&starf;&starf;&starf;',
-        feedbackAmount: "(5.112)"
+        feedbackAmount: "(5.112)",
+        shipping: '+ 5.84 ${&euro}; shipping...'
     },
 ];
 
@@ -234,16 +282,22 @@ function displayCards(iPhoneData) {
     iPhoneData.map(product => {
         let clone = template.content.cloneNode(true);
         let img = clone.querySelector(".slider-img img");
-        img.setAttribute("src", product.photoUrl);
-        let model = clone.querySelector(".type a");
-        model.innerText = product.name;
+        let model = clone.querySelector(".model-container a");
         let price = clone.querySelector(".price-container .price");
-        price.innerText = product.price;
+        let market = clone.querySelector('.market');
         let feedback = clone.querySelector(".feedback-stars");
-        feedback.innerHTML = product.feedback;
         let feedbackAmount = clone.querySelector(".feedback-amount");
+        let shipping = clone.querySelector(".product-shipping");
+
+        img.setAttribute("src", product.photoUrl);
+        model.innerText = product.name;
+        price.innerHTML = product.price;
+        market.innerText = product.market;
+        feedback.innerHTML = product.feedback;
         feedbackAmount.innerHTML = product.feedbackAmount;
+        shipping.innerHTML = product.shipping;
         sliderContainer.appendChild(clone);
+
     })
 
 
